@@ -69,11 +69,11 @@
 </head>
 <body>
   <div class="card">
-    <h5 class="card-header">🎁 Rút gọn URL by Kiên !</h5>
+    <h5 class="card-header">🎁 Rút gọn LINK by Kiên !</h5>
     <div class="card-body">
-      <h5 class="card-title">Vui Lòng Nhập URL bạn muốn rút gọn :</h5>
+      <h5 class="card-title">Vui Lòng Nhập LINK bạn muốn rút gọn :</h5>
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Example: https://" id="text">
+        <input type="text" class="form-control" placeholder="Example: https://facebook.com/kiendct" id="text">
         <div class="input-group-append">
           <button class="btn btn-primary" type="button" onclick='shorturl()' id="searchbtn">Rút Gọn Lại</button>
         </div>
@@ -88,15 +88,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Result</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <h5 class="modal-title" id="exampleModalLabel">Link rút gọn của bạn là :</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Rút gọn link tiếp">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="result">No result</div>
+        <div class="modal-body" id="result">Lỗi không thể rút gọn :</div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Copy</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
+          <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Sao Chép</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>    
         </div>
       </div>
     </div>
